@@ -1,0 +1,54 @@
+site_name: OkoVision
+copyright: Build with love by Stawen Dronek
+site_url: https://okovision.dronek.com/
+
+theme:
+  language: fr
+  name: material
+  # logo: assets/front/img/logo_oko_header-little.png
+  font:
+    text: Segoe UI #Merriweather Sans #Lato #Lato #Roboto #Cantarell #Helvetica Neue #
+    code: Roboto Mono
+  features:
+    # - navigation.sections # Affiche dans le menu de gauche toutes les sections
+    - navigation.top # Add back to top button
+    - navigation.tabs
+    # - navigation.tabs.sticky # Garde la top bar toujours visible
+    # - navigation.tracking # the URL in the address bar is automatically updated with the active anchor as highlighted in the table of contents
+    - content.code.annotate # Ajout des annotations dans les extraits de code
+    # - toc.integrate # A determiner si le toc doit etre intégré dans le menu de gauche
+    - navigation.indexes # Documents can be directly attached to sections, which is particularly useful for providing overview pages
+  palette:
+    scheme: default #other: slate
+    primary: green #other: black
+    accent: green
+extra_css:
+  - assets/stylesheets/extra.css #customiser le theme
+extra:
+  generator: false
+
+markdown_extensions:
+  - meta # add metadata into page for complement action, like remove tab index https://squidfunk.github.io/mkdocs-material/reference/meta-tags/?h=meta#configuration
+  - admonition # ensemble de block quotes
+  - pymdownx.details # collapse block quotes
+  - toc:
+      permalink: "#" # activer les anchors sur les titres
+  - pymdownx.emoji: # ajout l'utilisation d'emoji
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables # Afficher des tableaux
+  - pymdownx.highlight: # Permet un coloration syntaxique dans les balise code
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.superfences # Dependance pour les autres lib
+  - pymdownx.mark # permet de mettre en surbrillance du texte avec ==text==
+  - pymdownx.tabbed:
+      alternate_style: true # permet de faire des TAB
+  - pymdownx.tasklist: #
+      custom_checkbox: true
+  - attr_list # Add Html attribut like image size
+plugins:
+  - search
+  - awesome-pages: # via le fichier .pages, permet dans chaque rep de gerer le toc https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+      collapse_single_pages: false
+  - abs-to-rel # Mkdocs absolute to relative link converter https://github.com/sander76/mkdocs-abs-rel-plugin
