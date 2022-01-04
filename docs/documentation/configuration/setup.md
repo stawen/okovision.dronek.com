@@ -12,7 +12,7 @@
 
 **Si tout est Ok** vous aurez ce petit bandeau :
 
-    ![w-0100-oko](/assets/img/oko/w-0100-oko.png)
+![w-0100-oko](/assets/img/oko/w-0100-oko.png)
 
 ## Mode de recuperation des fichiers CSV
 
@@ -20,7 +20,7 @@ Si votre chaudière est connectée à votre réseau informatique, indiquer son i
 
 !!! note
 
-    Si vous avez utiliser un hebergement exterieur, voir le chapitre detaillé  [Configurer sa box pour rendre accessible la chaudiere depuis internet](/md/box.md)
+    Si vous avez utiliser un hebergement exterieur, voir le chapitre detaillé  [Configurer sa box pour rendre accessible la chaudiere depuis internet](/documentation/configuration/livebox.md)
 
     Sinon, choisissez USB, ainsi vous pourrez transferez manuellement les fichiers recuperés.
 
@@ -52,7 +52,7 @@ Okovision dispose d'un dictionnaire, ainsi les noms des capteurs, circuits ont �
 
 !!! important
 
-    [Après vous etes identifié](/wiki/configuration/login.md), Rendez vous sur la page *Matrice de lecture CSV*
+    [Après vous etes identifié](/documentation/configuration/login.md), Rendez vous sur la page *Matrice de lecture CSV*
 
 ![w-0140-oko](/assets/img/oko/w-0140-oko.png)
 
@@ -68,6 +68,6 @@ Upload de votre fichier dans okovision
 
 Quand okovision a terminé son analyse, la structure finale est affichée.
 
-Vous retrouverez la liste de tous ces capteurs dans [Création / Gestion des graphiques journaliers](/md/manageGraphics.md)
+Vous retrouverez la liste de tous ces capteurs dans [Création / Gestion des graphiques journaliers](/documentation/configuration/manage-graphics.md)
 
 ![w-0170-ok](/assets/img/oko/w-0170-oko.png)
