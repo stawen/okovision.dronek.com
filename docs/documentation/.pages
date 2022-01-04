@@ -1,0 +1,4 @@
+nav:
+    - installation
+    - configuration
+    - api.md

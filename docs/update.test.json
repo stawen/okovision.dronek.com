@@ -1,0 +1,139 @@
+{
+    "1.0.0": {
+        "url": "https://github.com/stawen/okovision/archive/1.0.0.zip",
+        "changelog": "<ul><li>First Version</li></ul>"
+    },
+    "1.3.0":{
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>[#26] - Refonte du modele de la base pour réduire son volume</li><li>[#26] - Creation d'un script de migration des données (lien disponible dans la page 'A propos')</li><li>[#27,#28,#29] - Réécriture du code impacté par le changement du modele de données</li><li>[#30] - correction anomalie sur calcul synthese lancé via Cron</li><li><b>Optimisation des performances + gestion pool de connexion bdd</b></li><li>Redécoupage des pages d'administration</li></ul>"
+    },
+    "1.3.1": {
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>[#31] - Correction effet de bord sur la création d'un nouveau graphique</li></ul>"
+    },
+    "1.4.0": {
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>[#22] - Tableau gr/dju/m2</li><li>[#34,#35] - Sync zoom graphe + maj indicateur haut de page sur la zone séléctionnée </li><li>Optimisation rendu graphe journalier</li><li>[#9] - Utilisation du status 4 et maj de la bdd</li></ul>"
+    },
+    "1.4.3": {
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>P1 - Fix timezone</li></ul>"
+    },
+    "1.5.0": {
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>Possibilité de recalculer la synthese sur une periode choisie</li><li>Mise à jour de la matrice possible sans perte de données</li><li>Petites retouches ergonomiques</li><li>Refraichir le numero de version après un l'installation d'une maj</li></ul>"
+    },
+    "1.5.2": {
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>Correction fuseau horaire (j'espere)</li><li>Axe Y dynamique pour les graphes journalier pouvant aller dans les négatifs</li></ul>"
+    },
+    "1.5.3": {
+        "url": "https://github.com/stawen/okovision/archive/unstable.zip",
+        "changelog": "<ul><li>Correction fuseau horaire (...)</li><li>Optimisation temps d'execution</li></ul>"
+    },
+    "1.5.5": {
+        "url": "https://github.com/stawen/okovision/archive/1.5.5.zip",
+        "date": "15/11/2015",
+        "changelog": "<ul><li>Notification en première page d'une mise à jour disponible</li></ul>"
+    },
+    "1.6.0": {
+        "url": "https://github.com/stawen/okovision/archive/1.6.0.zip",
+        "date": "20/11/2015",
+        "changelog": "<ul><li>Création d'un éspace sécurisé (login: admin, pass:okouser)</li><li>Ajout de pages d'erreurs personnalisées</li></ul>"
+    },
+    "1.6.1": {
+        "url": "https://github.com/stawen/okovision/archive/1.6.1.zip",
+        "date": "22/11/2015",
+        "changelog": "<ul><li>Correction upload fichier en erreur</li><li>Correction setup impossible</li></ul>"
+    },
+    "1.6.2": {
+        "url": "https://github.com/stawen/okovision/archive/1.6.2.zip",
+        "date": "23/11/2015",
+        "changelog": "<ul><li>Correction setup (compte admin non présent)</li><li>Ajout d'une colonne DJU dans tableau récapitulatif en page 'Historique'</li><li>Mise à jour du texte dans 'A propos'</li></ul>"
+    },
+    "1.6.3": {
+        "url": "https://github.com/stawen/okovision/archive/1.6.3.zip",
+        "date": "25/11/2015",
+        "changelog": "<ul><li>Correction du setup (erreur 401)</li><li>Corrections mineures diverses</li></ul>"
+    },
+    "1.6.4": {
+        "url": "https://github.com/stawen/okovision/archive/1.6.4.zip",
+        "date": "07/12/2015",
+        "changelog": "<ul><li>Préparation livraison 1.7.0</li><li>Evolution du mécanisme de mise à jour</li></ul>"
+    },
+    "1.7.0": {
+        "url": "https://github.com/stawen/okovision/archive/1.7.0.zip",
+        "date": "02/01/2016",
+        "changelog": "<ul><li> Correction orthographe / correction synthaxique</li><li> Changement de l'unité ms en ds pour la vis sans fin</li><li> Calendrier lors de la selection de la date sur la page d'accueil</li><li> Afficher les noms des courbes dans l'ordre des courbes</li><li> Ajout page 'Temps Réel'</li><ul><li>  Visualisation des parametres de réglage combustion chaudière et régulation</li><li>  Visualisation des graphiques en temps réel</li><li>  Sauvegarde de la configuration de la chaudiere</li><li>  Modification des parametres de la chaudiere via okovision</li><li>  Rechargement de parametres sauvegardées et modification des parametres de la chaudière</li><li>  Visualisation sur les graphes journaliers la modification des parametres de la chaudière</li></ul><li>  Suppression de la matrice sans perte de données de l'historique (mais suppresion des données journalières)</li></ul>"
+    },
+    "1.7.1": {
+        "url": "https://github.com/stawen/okovision/archive/1.7.1.zip",
+        "date": "03/01/2016",
+        "changelog": "<ul><li>Ajout d'une alerte pour dire de sauvegarder si changement de parametres</li><li>Prise en compte d'installation multi-chaudière (le calcul de la conso ne sera que pour la chaudière maitre)</li><li>Revision de la methode d'installation -> optimisation de l'espace de stockage necessaire pour les données journalières</li><li>Graphe synthèse saison, ne pas voir le mois en cours</li></ul>"
+    },
+    "1.7.2": {
+        "url": "https://github.com/stawen/okovision/archive/1.7.2.zip",
+        "date": "11/01/2016",
+        "changelog": "<ul><li>Ajout d'une API permettant à des applications tiers d'interagir avec okovision et la chaudière</li></ul>"
+    },
+    "1.7.3": {
+        "url": "https://github.com/stawen/okovision/archive/1.7.3.zip",
+        "date": "30/01/2016",
+        "changelog": "<ul><li>Correction mineur dans initialisation de la base de donnée (bgorge)</li><li>Quand un utilisateur import pour la même journée le csv en http et CSV, les données ne sont plus en double (bgorge)</li></ul>"
+    },
+    "1.7.4": {
+        "url": "https://github.com/stawen/okovision/archive/1.7.4.zip",
+        "date": "30/01/2016",
+        "changelog": "<ul><li>Correction perte des noms des capteurs suite maj 1.7.3</li></ul>"
+    },
+    "1.8.0": {
+        "url": "https://github.com/stawen/okovision/archive/1.8.0.zip",
+        "date": "25/04/2016",
+        "changelog": "<ul><li>Correction orthographe</li><li>Ajout gestion du stock des pellets (Silo et sac)</li><li>Gestion des evenements de la chaudière (ramonage, vidage du cendrier, entretien)</li></ul>"
+    },
+    "1.8.1": {
+        "url": "https://github.com/stawen/okovision/archive/1.8.1.zip",
+        "date": "01/02/2017",
+        "changelog": "<ul><li>Correction anomalie lors du setup pour le choix IP / USB</li><li>Correction déconnexion sous FireFox</li></ul>"
+    },
+    "1.8.2": {
+        "url": "https://github.com/stawen/okovision/archive/1.8.2.zip",
+        "date": "10/06/2019",
+        "changelog": "<ul><li>Version compatible PHP 5.6 et PHP 7.2</li><li>Correction de compatibilité avec Mysql 5.7 et MariaDB 10.3</li></ul>"
+    },
+    "1.8.3": {
+        "url": "https://github.com/stawen/okovision/archive/1.8.3.zip",
+        "date": "14/11/2020",
+        "changelog": "<ul><li>Refactoring du code pour respecter l'indentation PHP</li><li>Merge Fix84 proposé par bertrandgorge : Include all files with absolute paths</li><li>Merge Fix82 proposé par grouxx : Gestion dans GetIndic de plusieurs circuite + ajout de nouveaux retours</li><li>Merge Fix81 proposé par grouxx : Correction get and set boiler Mode pour choisir le bon circuit</li></ul>"
+    },
+    "1.8.4": {
+        "url": "https://github.com/stawen/okovision/archive/1.8.4.zip",
+        "date": "29/11/2020",
+        "changelog": "<ul><li>Okovision V2 Foundation : Cleanning Code</li><li>Fix #95 : Import from CSV file Firmware V3 doesn't work (thank's John47 !) </li><li>Improvement Wiki Documentation</li></ul>"
+    },
+    "1.8.5": {
+        "url": "https://github.com/stawen/okovision/archive/1.8.5.zip",
+        "date": "30/11/2020",
+        "changelog": "<ul><li>Fix #37 : Improved Cron function - Get ALL CSV on boiler if not yet imported (Thank's Contributor Bertrand Gorge)</li></ul>"
+    },
+    "1.9.0": {
+        "url": "https://github.com/stawen/okovision/archive/1.9.0.zip",
+        "date": "03/12/2020",
+        "changelog": "<ul><li>Display of domestic hot water consumption for the current day, and into summary reports</li><li>To more data on the previous days, you must go to the menu Calculation of daily summaries / Calcul des synthèse jouralières and force recalculation</li></ul>"
+    },
+    "1.9.1": {
+        "url": "https://github.com/stawen/okovision/archive/1.9.1.zip",
+        "date": "04/12/2020",
+        "changelog": "<ul><li>Fix #107 - Error Message after updating. In this update you still have the error. But not next update</li><li>Fix script install with new data Hot Water</li></ul>"
+    },
+    "1.9.2": {
+        "url": "https://github.com/stawen/okovision/archive/1.9.2.zip",
+        "date": "04/12/2020",
+        "changelog": "<ul><li>Fix #108 - Error Message rendu.getIndicByDay when you don' have pumpe Hot water</li></ul>"
+    },
+    "1.10.1": {
+        "url": "https://github.com/stawen/okovision/archive/1.10.1.zip",
+        "date": "06/12/2020",
+        "changelog": "<ul><li>Make Okovision International by adding English language (default)</li><li>For changing Language, go to parameters menu</li><li>This is the last update for the coming months !</li><li>Next version will be Okovision V2</li></ul>"
+    }    
+}

@@ -12,7 +12,7 @@ theme:
   features:
     # - navigation.sections # Affiche dans le menu de gauche toutes les sections
     - navigation.top # Add back to top button
-    - navigation.tabs
+    # - navigation.tabs
     # - navigation.tabs.sticky # Garde la top bar toujours visible
     # - navigation.tracking # the URL in the address bar is automatically updated with the active anchor as highlighted in the table of contents
     - content.code.annotate # Ajout des annotations dans les extraits de code
