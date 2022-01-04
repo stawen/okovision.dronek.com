@@ -5,18 +5,12 @@ site_url: https://okovision.dronek.com/
 theme:
   language: fr
   name: material
-  # logo: assets/front/img/logo_oko_header-little.png
   font:
     text: Segoe UI #Merriweather Sans #Lato #Lato #Roboto #Cantarell #Helvetica Neue #
     code: Roboto Mono
   features:
-    # - navigation.sections # Affiche dans le menu de gauche toutes les sections
     - navigation.top # Add back to top button
-    # - navigation.tabs
-    # - navigation.tabs.sticky # Garde la top bar toujours visible
-    # - navigation.tracking # the URL in the address bar is automatically updated with the active anchor as highlighted in the table of contents
     - content.code.annotate # Ajout des annotations dans les extraits de code
-    # - toc.integrate # A determiner si le toc doit etre intégré dans le menu de gauche
     - navigation.indexes # Documents can be directly attached to sections, which is particularly useful for providing overview pages
   palette:
     scheme: default #other: slate
