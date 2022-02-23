@@ -15,14 +15,13 @@
 ### Qui suis je ?
 
 Je suis un heureux possesseur d'une Oekofen Pellomatic.
-De formation Ingénieur en Informatique, je suis actuellement Architecte Cloud.
 
 ### Histoire Okovision
 
-j'ai immediatement relié ma chaudiere sur mon reseau. J'ai pu ainsi commencer à voir ce que je pouvais faire avec l'interface fournie par la chaudiere. J'ai d'abord fait des macro excel pour traiter les CSV, mais il me fallait quelques choses d'automatique. Je me suis donc lancer dans le developpement d'une application de type "Web"
+j'ai immediatement relié ma chaudiere sur mon reseau. J'ai pu ainsi commencer à voir ce que je pouvais faire avec l'interface fournie par la chaudiere. J'ai d'abord fait des macro excel pour traiter les CSV, mais il me fallait quelque chose d'automatique. Je me suis donc lancé dans le developpement d'une application de type "Web"
 
-J'ai passé de nombreuses heures à developper okovision pour mes besoins personnelles. Le systeme d'okovision etait avant les Version V4 assez simple. J'ai pu ainsi developper une interface graphique pour mettre en forme toutes les données produites par la chaudiere via les exports CSV, mais aussi de pouvoir lui envoyer des commandes de configuration permettant ainsi d'historiser les configurations pour les régler aux petits oignons (je suis assez fiere de cette fonctionnalité 😎)
-Après de nombreux echanges avec des utilisateurs, j'ai rajouté des fonctionnalités diverses pour repondre à leur besoin (comme l'apprentissage de chaque configuration via une matrice de correspondance)
+J'ai passé de nombreuses heures à developper okovision pour mes besoins personnels. Le systeme d'okovision était, avant les Version V4, assez simple. J'ai pu ainsi developper une interface graphique pour mettre en forme toutes les données produites par la chaudiere via les exports CSV, mais aussi de pouvoir lui envoyer des commandes de configuration permettant ainsi d'historiser les configurations pour les régler aux petits oignons (je suis assez fière de cette fonctionnalité 😎)
+Après de nombreux echanges avec des utilisateurs, j'ai rajouté des fonctionnalités diverses pour repondre à leurs besoins (comme l'apprentissage de chaque configuration via une matrice de correspondance)
 
 ### Le Bilan
 
@@ -42,7 +41,7 @@ J'avais déjà fait de la programmation, mais ce n'est pas mon metier principale
 Plusieurs raisons :
 
 - Il n'est plus possible d'extraire le CSV directement depuis la chaudiere. Car les fichiers sont directement envoyés sur un stockage chez oekofen
-- Il faut donc mettre en place une application web disponible sur internet que je gererai afin que les utilisateurs puissent s'inscrire  sans avoir a installer quoi que ce soit(Modele d'application de type SaaS)
+- Il faut donc mettre en place une application web disponible sur internet que je gererai afin que les utilisateurs puissent s'inscrire  sans avoir a installer quoi que ce soit (Modele d'application de type SaaS)
     - J'ai fait un test technique et j'etait en capacité de recolté l'ensemble des données de ==toutes== les chaudières okofen connectés sur internet. Cela pose une question de sécurité du coté d'okofen je trouve.
 - Pour comprendre comment les chaudieres fonctionnent a partir de la Version 4, j'ai été obligé de faire du Reverse Ingeniering. Cela veut dire decompiler le Firmware pour lire le code. Ce que j'ai fait. J'ai pu ainsi comprend l'ensemble de l'architecture qu'okofen a mis en place pour recueillir les données de toutes les chaudieres, et proposer leurs services aux travers de my.okofen .
     - En faisant cela, ==je me met dans l'illegalité==. Car je n'ai pas demandé l'accord d'oekofen de lire leur code source. Donc n'ayant aucun partenariat de developpement avec eux, je ne vais pas passer de mon temps personnel pour developper une plateforme SaaS qui se base sur un acte illegale au regard du droit de la propriété
