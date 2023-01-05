@@ -12,7 +12,7 @@ Cliquer sur les jours que vous souhaitez unitairement ou sur `Calculer toutes le
 
 Si vous avez modifié des éléments dans la configuration générale (T°C, Poids Pellet), ces nouveaux éléments sont pris en compte pour les synthèses futurs.
 
-Note: Si vous voulez appliquer ces changements pour des jours precedent, vous devez recalculer la synthese.
+Note: Si vous voulez appliquer ces changements pour des jours precedent, vous devez recalculer la synthèse.
 
 ![w-0231-oko](/assets/img/oko/w-0231-oko.png)
 

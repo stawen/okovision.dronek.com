@@ -56,7 +56,7 @@ Okovision dispose d'un dictionnaire, ainsi les noms des capteurs, circuits ont �
 
 ![w-0140-oko](/assets/img/oko/w-0140-oko.png)
 
-Choix du fichier csv produit par votre chaudiere que vous avez deposé sur votre PC
+Choix du fichier csv produit par votre chaudière que vous avez deposé sur votre PC
 
 ![w-0150-oko](/assets/img/oko/w-0150-oko.png)
 
