@@ -1,0 +1,1002 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://okovision.dronek.com/documentation/">
+      
+      
+      
+        <link rel="next" href="api/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Documentation - OkoVision</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe+UI:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Segoe UI";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentation" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href=".." title="OkoVision" class="md-header__button md-logo" aria-label="OkoVision" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OkoVision
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OkoVision" class="md-nav__button md-logo" aria-label="OkoVision" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OkoVision
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Installation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation/linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation/synology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synology
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Configuration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuration initiale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/login/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accès à l’espace sécurisé
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/season/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Créer les saisons
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/manage-graphics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Création et gestion des graphiques journaliers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/synthese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synthèse journalière
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/info-generale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Informations générales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/update-matrix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestion de la matrice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/livebox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurer une Livebox Orange
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/rt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temps Réel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuration/update/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mise à jour Okovision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API - Interface de communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compatibilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compatibilité
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-mot-de-lauteur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le mot de l’auteur
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le mot de l’auteur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qui-suis-je" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qui suis-je ?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#histoire-dokovision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Histoire d’Okovision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bilan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bilan
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pourquoi-il-ny-aura-pas-dokovision-v2-compatible-avec-le-firmware-v4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pourquoi il n’y aura pas d’Okovision V2 compatible avec le firmware V4
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h1>
+<h2 id="compatibilite">Compatibilité<a class="headerlink" href="#compatibilite" title="Permanent link">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Okovision est uniquement compatible avec les firmwares ÖkoFEN et Paradigma V2 et V3.
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[Okovision n’est plus développé](index.md#pourquoi-il-ny-aura-pas-dokovision-v2-compatible-avec-le-firmware-v4). Aucune compatibilité avec le firmware V4 n’est possible.
+</code></pre></div></td></tr></table></div>
+</div>
+<h2 id="le-mot-de-lauteur">Le mot de l’auteur<a class="headerlink" href="#le-mot-de-lauteur" title="Permanent link">#</a></h2>
+<h3 id="qui-suis-je">Qui suis-je ?<a class="headerlink" href="#qui-suis-je" title="Permanent link">#</a></h3>
+<p>Je suis l’heureux propriétaire d’une ÖkoFEN Pellematic.</p>
+<h3 id="histoire-dokovision">Histoire d’Okovision<a class="headerlink" href="#histoire-dokovision" title="Permanent link">#</a></h3>
+<p>La chaudière le permettait, alors je l’ai immédiatement reliée à mon réseau domestique. J’ai ainsi pu explorer les possibilités qu’elle offrait. Dans un premier temps, pour m’aider à régler ses paramètres et à mesurer leur impact sur les courbes et la gestion de la puissance, j’ai écrit des macros Excel pour traiter les fichiers CSV.</p>
+<p>Très vite, j’ai eu besoin d’un outil automatisé qui ne nécessite presque aucune intervention.</p>
+<p>Je me suis donc lancé dans le développement d’une application web (back-end : PHP ; front-end : Bootstrap et jQuery).</p>
+<p>J’ai consacré de nombreuses heures au développement d’<code>Okovision</code> pour répondre à mes besoins personnels. Avant le firmware V4, le fonctionnement d’Okovision était assez simple. J’ai ainsi pu créer une interface graphique qui met en forme les données de la chaudière exportées au format CSV. L’application permet également de lui envoyer des commandes de configuration et d’en conserver un historique, afin de faciliter les réglages (je suis assez fier de cette fonctionnalité 😎).</p>
+<p>Après de nombreux échanges avec des utilisateurs sur des forums, j’ai ajouté plusieurs fonctionnalités pour répondre à leurs besoins, comme l’apprentissage de chaque configuration à l’aide d’une matrice de correspondance.</p>
+<h3 id="bilan">Bilan<a class="headerlink" href="#bilan" title="Permanent link">#</a></h3>
+<p><code>Okovision</code> a été un bon cas d’usage.</p>
+<p>J’ai commencé ma carrière professionnelle comme développeur, mais ce n’est plus mon métier principal.</p>
+<ul>
+<li>PHP m’a permis de mettre rapidement en place une solution, malgré les défauts que peut avoir ce langage.<ul>
+<li>Le code devait pouvoir être hébergé chez des hébergeurs grand public (1&amp;1, OVH, etc.). PHP était alors le langage le plus répandu.</li>
+</ul>
+</li>
+<li>Le code ne repose sur aucun framework. C’était un choix délibéré : je voulais que l’installation soit simple et ne nécessite pas de connaissances particulières.<ul>
+<li>Cela dit, nous avons atteint les limites de cette approche. Pour continuer à faire évoluer l’application, il faudrait utiliser un framework.</li>
+</ul>
+</li>
+<li>Avec le recul, la structure du code pourrait être améliorée. C’est le cas de tout projet : il est toujours possible de faire mieux 😉</li>
+<li>Il reste quelques fonctionnalités à développer, comme la purge des données journalières pour alléger la base de données.</li>
+<li>Maintenir une application fonctionnelle dans la durée n’est pas simple. PHP, MariaDB et les autres technologies évoluent ; il faut donc régulièrement mettre le projet à jour pour que les nouveaux utilisateurs puissent en profiter. Cela demande beaucoup de temps.</li>
+</ul>
+<h2 id="pourquoi-il-ny-aura-pas-dokovision-v2-compatible-avec-le-firmware-v4">Pourquoi il n’y aura pas d’Okovision V2 compatible avec le firmware V4<a class="headerlink" href="#pourquoi-il-ny-aura-pas-dokovision-v2-compatible-avec-le-firmware-v4" title="Permanent link">#</a></h2>
+<p>Plusieurs raisons expliquent ce choix :</p>
+<ul>
+<li>Il n’est plus possible d’extraire les fichiers CSV directement depuis la chaudière. Ils sont désormais envoyés vers un stockage externe géré par ÖkoFEN ou par un prestataire.</li>
+<li>Il faudrait donc créer une application web accessible sur Internet, à laquelle les utilisateurs pourraient s’inscrire sans rien avoir à installer (un modèle d’application de type SaaS).<ul>
+<li>Après une étude de faisabilité (POC), j’ai constaté qu’il était possible de récupérer les données de <mark>toutes</mark> les chaudières ÖkoFEN connectées à Internet, sans l’accord de leurs propriétaires ni celui du constructeur. Cela soulève une question de sécurité pour ÖkoFEN.</li>
+</ul>
+</li>
+<li>Pour comprendre le fonctionnement des chaudières à partir du firmware V4, j’ai dû procéder à de la rétro-ingénierie, c’est-à-dire décompiler le firmware pour en lire le code. J’ai ainsi pu comprendre l’architecture mise en place par ÖkoFEN pour recueillir les données des chaudières et proposer ses services via my.okofen.info.<ul>
+<li>En procédant ainsi, <mark>je me placerais dans l’illégalité</mark>, car je n’ai pas demandé à ÖkoFEN l’autorisation d’examiner son code source. En l’absence de partenariat de développement avec le constructeur, je ne souhaite pas consacrer de temps personnel à la création d’une plateforme SaaS reposant sur une démarche qui pourrait contrevenir au droit de la propriété intellectuelle.</li>
+<li>De plus, comme indiqué précédemment, <code>Okovision</code> doit rester simple d’utilisation. Or, les « connexions » nécessaires avec le système d’information d’ÖkoFEN ne sont pas accessibles à tous. C’est pourquoi j’envisageais de proposer le service sous la forme d’une plateforme ou d’une application SaaS.</li>
+</ul>
+</li>
+<li>Le modèle économique ne serait pas viable. Je devrais assumer les coûts d’infrastructure nécessaires au fonctionnement et à l’évolution du service, y compris avec un hébergement cloud comme Azure ou AWS. Les utilisateurs seraient-ils prêts à payer pour ce service ? Je ne le pense pas, ou pas en nombre suffisant.<ul>
+<li>Cela vaut-il la peine de développer une toute nouvelle plateforme compatible avec le firmware V4, alors que le modèle économique n’est pas viable et que le projet repose sur <mark>une démarche potentiellement contraire au droit de la propriété intellectuelle</mark> ?</li>
+</ul>
+</li>
+</ul>
+<p>Pour toutes ces raisons, je ne souhaite pas développer bénévolement Okovision V2. Si ÖkoFEN créait une solution équivalente, modifiait son architecture logicielle ou changeait les mots de passe, Okovision cesserait de fonctionner. Ce serait alors beaucoup de temps investi en vain.</p>
+<p>Le développement d’Okovision s’arrête donc à la version actuelle, qui répond à mon besoin de suivre la consommation de granulés de <mark>ma</mark> chaudière.</p>
+<p>Merci à toutes celles et ceux qui ont contribué au projet, de près ou de loin.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Build with love by Stawen Dronek
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.top", "content.code.annotate", "navigation.indexes"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
