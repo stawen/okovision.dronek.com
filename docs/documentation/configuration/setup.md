@@ -1,73 +1,75 @@
-# Setup
+# Configuration initiale
 
 ![w-0080-oko](/assets/img/oko/w-0080-oko.png)
 
-## Configuration / Connexion à la base de donnée
+## Configuration et connexion à la base de données
 
-- Si vous êtes sous windows et que vous avez suivi le tuto, mettre localhost, root/root (comme dans l'image ci-dessous).
-- Si vous êtes sous rpi/linux, localhost, pour usr / mot de passe, c'est vous qui savez.
-- Si vous êtes sur Nas Synology, mettre localhost, user : root et pas de mot de passe (par default c'est comme cela)
+- Si vous utilisez Windows et avez suivi le tutoriel, indiquez `localhost` comme hôte et `root` comme nom d’utilisateur et mot de passe (comme dans l’exemple ci-dessous).
+- Si vous utilisez un Raspberry Pi ou Linux, indiquez `localhost`, puis saisissez le nom d’utilisateur et le mot de passe de votre base de données.
+- Si vous utilisez un NAS Synology, indiquez `localhost` et `root` comme nom d’utilisateur. Par défaut, aucun mot de passe n’est défini.
 
 ![w-0090-oko](/assets/img/oko/w-0090-oko.png)
 
-**Si tout est Ok** vous aurez ce petit bandeau :
+**Si la connexion fonctionne**, le bandeau suivant s’affichera :
 
 ![w-0100-oko](/assets/img/oko/w-0100-oko.png)
 
-## Mode de recuperation des fichiers CSV
+## Mode de récupération des fichiers CSV
 
-Si votre chaudière est connectée à votre réseau informatique, indiquer son ip (vous pourrez la changer plus tard via la menu de configuration)
+Si votre chaudière est connectée à votre réseau local, indiquez son adresse IP. Vous pourrez la modifier ultérieurement dans le menu de configuration.
 
 !!! note
 
-    Si vous avez utiliser un hebergement exterieur, voir le chapitre detaillé  [Configurer sa box pour rendre accessible la chaudiere depuis internet](/documentation/configuration/livebox.md)
+    Si vous utilisez un hébergement externe, consultez le chapitre [Configurer votre box pour accéder à la chaudière depuis Internet](/documentation/configuration/livebox.md).
 
-    Sinon, choisissez USB, ainsi vous pourrez transferez manuellement les fichiers recuperés.
+    Sinon, choisissez **USB** pour transférer manuellement les fichiers récupérés.
 
 ![w-0120-oko](/assets/img/oko/w-0120-oko.png)
 
 ![w-0110-oko](/assets/img/oko/w-0110-oko.png)
 
-## **Paramétrage spécifique** à votre installation
+## **Paramétrage spécifique** de votre installation
 
 ![w-0130-oko](/assets/img/oko/w-0130-oko.png)
 
 ## Matrice de lecture
 
-Note: Cette étape est primoridale et obligatoire
+!!! note
 
-### Apprentissage de tous les capteurs présents sur votre chaudiere
+    Cette étape est indispensable.
 
-Chaque installation de chaudière est differentes (ecs ou non, plancher chauffant ou non, ballon tampon ou non, solaire ou non, etc, etc etc).
+### Détecter les capteurs de votre chaudière
+
+Chaque installation est différente : présence ou non d’un système d’eau chaude sanitaire (ECS), d’un plancher chauffant, d’un ballon tampon ou de panneaux solaires, par exemple.
 
 !!! note
 
-    **Okovision** peu tout gérer, mais il faut lui faire connaitre votre installation.
+    **Okovision** peut gérer ces différentes configurations, mais vous devez d’abord lui indiquer comment votre installation est composée.
 
-    Il faut lui fournir un fichier csv généré par la chaudiere. 
+    Pour cela, fournissez-lui un fichier CSV généré par la chaudière.
 
-    Ainsi Okovison va l'analyser et fini de l'installation
+    Okovision analysera ce fichier pour terminer l’installation.
 
-Okovision dispose d'un dictionnaire, ainsi les noms des capteurs, circuits ont été traduit en Français
+Okovision dispose d’un dictionnaire qui traduit en français les noms des capteurs et des circuits.
 
 !!! important
 
-    [Après vous etes identifié](/documentation/configuration/login.md), Rendez vous sur la page *Matrice de lecture CSV*
+    [Après vous être identifié](/documentation/configuration/login.md), rendez-vous sur la page *Matrice de lecture CSV*.
 
 ![w-0140-oko](/assets/img/oko/w-0140-oko.png)
 
-Choix du fichier csv produit par votre chaudière que vous avez deposé sur votre PC
+Sélectionnez le fichier CSV produit par votre chaudière et enregistré sur votre ordinateur.
 
 ![w-0150-oko](/assets/img/oko/w-0150-oko.png)
 
-Upload de votre fichier dans okovision
+Importez le fichier dans Okovision.
 
 ![w-0160-oko](/assets/img/oko/w-0160-oko.png)
 
 ## Apprentissage terminé
 
-Quand okovision a terminé son analyse, la structure finale est affichée.
+Une fois l’analyse terminée, Okovision affiche la structure détectée.
 
-Vous retrouverez la liste de tous ces capteurs dans [Création / Gestion des graphiques journaliers](/documentation/configuration/manage-graphics.md)
+Vous retrouverez la liste des capteurs dans la page [Création et gestion des graphiques journaliers](/documentation/configuration/manage-graphics.md).
 
 ![w-0170-ok](/assets/img/oko/w-0170-oko.png)

@@ -2,38 +2,37 @@
 
 !!! information
 
-    Okovision est compatible PHP5 et PHP7
+    Okovision est compatible avec PHP 5 et PHP 7.
 
-Si vous avez un `rpi` ou un `serveur linux` chez vous, je pense sans me tromper que vous savez très bien installer Apache + Mariadb (ou Mysql) + PHP.
-Je suis aussi sur que vous savez configurer un site sous apache.
+Si vous disposez d’un `rpi` ou d’un `serveur Linux`, vous savez probablement déjà installer Apache, MariaDB (ou MySQL) et PHP, ainsi que configurer un site Apache.
 
-Je vous met le detail pour une configuration type. Cette exemple est pour un raspberry qui ne sera dédié qu'a okovision
+Vous trouverez ci-dessous les étapes correspondant à une configuration type. Cet exemple concerne un Raspberry Pi dédié à Okovision.
 
-## Installation des binaires
+## Installation des composants
 
-### Installation Base de donnée
+### Installation de la base de données
 
 ```bash
 sudo apt-get -y install mariadb-server
 ```
 
-### Configuration Base de donnée
+### Configuration de la base de données
 
-Creation de l'utilisateur `okouser` avec le password `okopass`
+Créez l’utilisateur `okouser` avec le mot de passe `okopass` :
 
 ```bash
 sudo mysql -e "CREATE USER 'okouser'@'localhost' IDENTIFIED BY 'okopass';"
 sudo mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'okouser'@'localhost' ;"
 ```
 
-### Installation Apache
+### Installation d’Apache
 
 ```bash
 sudo apt-get -y install apache2
 systemctl enable apache2
 ```
 
-### Installation PHP
+### Installation de PHP
 
 ```bash
 sudo apt-get -y install software-properties-common python-software-properties
@@ -43,7 +42,7 @@ sudo apt-get -y install php7.2 php7.2-cli php7.2-common
 sudo apt-get -y install php7.2-curl php7.2-gd php7.2-json php7.2-mbstring php7.2-intl php7.2-mysql php7.2-xml php7.2-zip
 ```
 
-## Installation des sources Okovision
+## Installation des sources d’Okovision
 
 ```bash
 cd /var/www/
@@ -54,7 +53,7 @@ rm master.zip
 chown www-data:www-data -R okovision/
 ```
 
-### Configuration apache
+### Configuration d’Apache
 
 ```bash
 cp /var/www/okovision/install/099-okovision.conf /etc/apache2/sites-available/.
@@ -63,23 +62,22 @@ a2dissite 000-default
 service apache2 reload
 ```
 
-### Configuration okovision
+### Configuration d’Okovision
 
-Aller sur l'adresse ip du serveur linux / rpi et faites le setup okovision
+Ouvrez l’adresse IP de votre serveur Linux ou de votre Raspberry Pi dans un navigateur, puis suivez la procédure de configuration d’Okovision.
 
-## Cron sous linux
+## Tâche Cron sous Linux
 
-Lancer l'editer des taches planifiés
-Si premier lancement , choisissez Nano comme éditeur.
+Ouvrez l’éditeur des tâches planifiées. Lors du premier lancement, sélectionnez Nano comme éditeur.
 
 ```bash
 crontab -e
 ```
 
-Inserer en fin de fichier cette ligne
+Ajoutez la ligne suivante à la fin du fichier :
 
 ```bash
 22      */2     *       *       *       cd /var/www/okovision; /usr/bin/php -f cron.php 
 ```
 
-Faites `CTRL + X`, Puis confirmer l'enregistrement `Y`
+Appuyez sur `CTRL + X`, puis confirmez l’enregistrement avec `Y`.

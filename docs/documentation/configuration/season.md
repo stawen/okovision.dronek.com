@@ -1,11 +1,11 @@
-# Création des saisons
+# Créer les saisons
 
 !!! warning
 
-    Il faut etre **authentifié**. Accessible dans le menu **Saisons**
+    Vous devez être **authentifié**. Cette page est accessible depuis le menu **Saisons**.
 
-    La création des saisons est nécéssaire pour la génération des graphiques de synthèse.
+    La création des saisons est nécessaire pour générer les graphiques de synthèse.
 
-Vous saisissez le premier jour de votre saison. Dans l'exemple c'est le 01 septembre, mais vous faites comme vous voulez.
+Saisissez la date de début de votre saison. Dans l’exemple ci-dessous, elle commence le 1er septembre, mais vous pouvez choisir la date qui vous convient.
 
 ![w-0180-oko](/assets/img/oko/w-0180-oko.png)

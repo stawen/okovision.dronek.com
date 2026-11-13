@@ -2,18 +2,16 @@
 
 !!! warning
 
-    Il faut etre **authentifié**. Accessible dans le menu **Informations Générales**
+    Vous devez être **authentifié**. Cette page est accessible depuis le menu **Informations générales**.
 
 !!! important
 
-    Vous choissisez le mode de récupération des données de la chaudière (USB / IP)
+    Choisissez le mode de récupération des données de la chaudière : **USB** ou **IP**.
 
-Vous definissez :
+Renseignez les paramètres suivants :
 
-- **T°C de reference dans votre maison** : Si vous avez un T°C réduit à 19.5 et un confort à 20°C, vous faites la moyenne.
-Cette valeur permet de calculer les DJU (Degré jour unifié) Elle vous permet d'avoir une valeur de comparaison en besoin énéergetique
-Mais vous pouvez choisir de mettre 20 pour etre en DJU 20 ou 18 pour etre en DJU 18
-- **Poids Pellet** : Vous devez mesurer la quantité de pellet transmise par la vis tremis en 60 secondes.
-- **Surface Maison** : Permet de calculer l'indicateur gr/dju/m2, et de l'utiliser comme indicateur de comparaison de votre installation
+- **Température de référence dans votre logement** : si la température réduite est de 19,5 °C et la température de confort de 20 °C, saisissez leur moyenne. Cette valeur sert à calculer les DJU (degrés-jours unifiés), qui permettent de comparer les besoins énergétiques. Vous pouvez aussi choisir une base de 20 °C (DJU 20) ou de 18 °C (DJU 18).
+- **Poids des granulés** : mesurez la quantité de granulés distribuée par la vis sans fin en 60 secondes.
+- **Surface du logement** : cette valeur sert à calculer l’indicateur g/DJU/m², qui permet de comparer les performances de votre installation.
 
 ![w-0190-oko](/assets/img/oko/w-0190-oko.png)

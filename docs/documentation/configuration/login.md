@@ -1,8 +1,8 @@
-# Accès espace sécurisé
+# Accès à l’espace sécurisé
 
-Les acccès aux menu de configuration sont protégés.
+L’accès aux menus de configuration est réservé aux utilisateurs authentifiés.
 
 ```txt
-login: admin
-password: okouser
+Identifiant : admin
+Mot de passe : okouser
 ```

@@ -2,35 +2,35 @@
 
 !!! note
 
-    Au travers de cette section, vous pourrez visualiser les informations en temps réel de votre chaudière.
+    Cette section vous permet de consulter les informations de votre chaudière en temps réel.
 
-    Vous pouvez les modifier, et aussi les sauvegarder.
+    Vous pouvez également les modifier et enregistrer vos changements.
 
-## Visualisation et modification des paramêtres de votre chaudière
+## Consulter et modifier les paramètres de votre chaudière
 
-Tout d'abord, vous devez renseigner le login /mot de passe que vous utiliser pour vous connecter sur l'interface graphique web de votre chaudière.
+Commencez par saisir les identifiants que vous utilisez pour vous connecter à l’interface web de votre chaudière.
 
-cliquez sur l'icone suivante :
+Cliquez sur l’icône suivante :
 
-![w-0340-oko](/assets/img/oko/w-0340-oko.png) et aller sur le menu `Temps Réèl`
+![w-0340-oko](/assets/img/oko/w-0340-oko.png), puis ouvrez le menu `Temps réel`.
 
-Okovision pourra se connecter à votre chaudière et récuperer toutes les informations necessaires.
+Okovision pourra alors se connecter à votre chaudière et récupérer les informations nécessaires.
 
 ![w-0350-oko](/assets/img/oko/w-0350-oko.png)
 
-Il vous est possible de modifier chaque paramêtre
+Vous pouvez modifier chaque paramètre.
 
 ![w-0360-oko](/assets/img/oko/w-0360-oko.png)
 
-Chaque paramêtres modifiés ne sera appliqués sur la chaudière que s'il est sauvegardé
+Les paramètres modifiés ne seront appliqués à la chaudière qu’après leur enregistrement.
 
 ![w-0370-oko](/assets/img/oko/w-0370-oko.png)
 
-Saisissez une déscription (ce texte apparaitra sur les graphiques journaliers)
+Saisissez une description. Ce texte apparaîtra sur les graphiques journaliers.
 
 ![w-0380-oko](/assets/img/oko/w-0380-oko.png)
 
-Il vous est aussi possible de voir les courbes des graphes que vous avez créé en temps réel.
+Vous pouvez également consulter en temps réel les courbes des graphiques que vous avez créés.
 
 ![w-0390-oko](/assets/img/oko/w-0390-oko.png)
 

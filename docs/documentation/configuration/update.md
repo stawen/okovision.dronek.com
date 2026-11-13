@@ -2,10 +2,10 @@
 
 !!! important
 
-    `Okovision` verifie automatiquement si des mises à jour sont disponibles
+    `Okovision` vérifie automatiquement si des mises à jour sont disponibles.
 
 !!! note
 
-    Aller sur la page `A propos`
+    Consultez la page `À propos`.
 
-Si cela est le cas, vous pourrez lancer la mise à jour automatique. Vous n'avez rien d'autre à faire.
+Si une mise à jour est disponible, vous pouvez lancer son installation automatique. Vous n’avez rien d’autre à faire.

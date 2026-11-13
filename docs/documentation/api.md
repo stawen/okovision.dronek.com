@@ -1,23 +1,26 @@
 # API - Interface de communication
 
-Okovision dispose d'une API.
+Okovision dispose d’une API.
 
-Cela vous permet d'agir sur Okovision au travers de cette api sans passer par son interface graphique.
-Cela vous permet aussi d'agir sur votre directement sur chaudiere via cette api.
+Elle vous permet d’interagir avec Okovision sans passer par son interface graphique. Vous pouvez également agir directement sur votre chaudière à l’aide de cette API.
 
 ## Fonctionnement
 
-Important: Les appels sont des GET, et l'api retourne du Json
+!!! important
 
-Important: Vous devez fournir dans votre GET votre TOKEN-API (visible dans la page "A propos")
+    Les appels utilisent la méthode GET et l’API renvoie des données au format JSON.
 
-Exemple de Requette :
+!!! important
+
+    Vous devez inclure votre jeton API dans la requête GET. Il est disponible sur la page « À propos ».
+
+Exemple de requête :
 
 ```bash
 curl http://okovision/api.php?token=sdjknrjkfndvjb&type=admin&action=getFileFromChaudiere
 ```
 
-Reponse :
+Réponse :
 
 ```json
 {
@@ -43,13 +46,13 @@ Reponse :
 }
 ```
 
-Exemple Requette :
+Exemple de requête :
 
 ```bash
 curl http://okovision/api.php?token=sdjknrjkfndvjb&type=rt&action=setBoilerMode&way=1&mode=2
 ```
 
-Reponse :
+Réponse :
 
 ```json
 [
@@ -61,13 +64,13 @@ Reponse :
 ]
 ```
 
-Exmple Requette :
+Exemple de requête :
 
 ```bash
 curl http://okovision/api.php?token=sdjknrjkfndvjb&type=rendu&action=getIndicByDay&day=2015-12-22
 ```
 
-Reponse :
+Réponse :
 
 ```json
 {
@@ -79,31 +82,33 @@ Reponse :
 
 ## Lecture de la documentation
 
-Par exemple `setBoilerMode`
+Prenons l’exemple de `setBoilerMode` :
 
 ```txt
 * rt :
-  * setBoilerMode (permet de forcer le mode d'un circuit)
-      * way : 0 / 1 / 2 / etc (numero du circuit)
-      * mode : 0 - arret / 1 - Auto / 2 - Confort / 3 - Reduit
+  * setBoilerMode (permet de forcer le mode d’un circuit)
+      * way : 0 / 1 / 2 / etc. (numéro du circuit)
+      * mode : 0 - arrêt / 1 - Auto / 2 - Confort / 3 - Réduit
 ```
 
-il faut ecrire :
+La requête doit donc contenir les paramètres suivants :
 
 ```txt
 * type=rt
 * action=setBoilerMode
-* way=1 (si vous avez un seul circuit de chauffage, 1 sera toujours la valeur, si vous plusieur circuit, Aller dans l'interface web d'okofen, le numero du circuit de chauffage est precisé
-* mode=2 (ici force le mode Confort)
+* way=1 (si vous n’avez qu’un seul circuit de chauffage, utilisez 1 ; si vous en avez plusieurs, consultez l’interface web ÖkoFEN pour connaître le numéro du circuit)
+* mode=2 (force ici le mode Confort)
 ```
 
-Important: Ne pas oublier de mettre le token, sinon la commande sera rejecté
+!!! important
+
+    N’oubliez pas d’inclure le jeton API, sinon la commande sera rejetée.
 
 ```txt
-* token=sdjknrjkfndvjb  (mettre celui present dans la page "A propos" de votre okovision)
+* token=sdjknrjkfndvjb  (utilisez celui qui figure sur la page « À propos » de votre instance Okovision)
 ```
 
-Le resultat
+Résultat :
 
 ```bash
 curl http://okovision/api.php?TOKEN=sdjknrjkfndvjb&TYPE=rt&ACTION=setBoilerMode&WAY=1&MODE=2
@@ -122,22 +127,22 @@ curl http://okovision/api.php?TOKEN=sdjknrjkfndvjb&TYPE=rt&ACTION=setBoilerMode&
 * graphique :
    * getCapteurs
    * getGrapheAsso :
-      * id : fournir l'id du graphique (rendu.getGraphe)
+      * id : identifiant du graphique (rendu.getGraphe)
       
 * rendu :
    * getGraphe
    * getGrapheData :
-      * id : id du graphique (rendu.getGraphe)
-      * day : jour voulu, format YYYY-MM-DD
+      * id : identifiant du graphique (rendu.getGraphe)
+      * day : jour souhaité, au format YYYY-MM-DD
       
    *  getIndicByDay :
-      * day : jour voulu, format YYYY-MM-DD
+      * day : jour souhaité, au format YYYY-MM-DD
       
 * rt :
-   * getBoilerMode (permet de connaitre le mode de fonctionnement d'un circuit de chauffage -> Arret / Reduit / Confort / Auto) :
-      * way : 0 / 1 / 2 / etc (numero du circuit)
+   * getBoilerMode (permet de connaître le mode de fonctionnement d’un circuit de chauffage : Arrêt / Réduit / Confort / Auto) :
+      * way : 0 / 1 / 2 / etc. (numéro du circuit)
       
-   * setBoilerMode (permet de forcer le mode d'un circuit)
-      * way : 0 / 1 / 2 / etc (numero du circuit)
-      * mode : 0 - arret / 1 - Auto / 2 - Confort / 3 - Reduit
+   * setBoilerMode (permet de forcer le mode d’un circuit)
+      * way : 0 / 1 / 2 / etc. (numéro du circuit)
+      * mode : 0 - arrêt / 1 - Auto / 2 - Confort / 3 - Réduit
 ```

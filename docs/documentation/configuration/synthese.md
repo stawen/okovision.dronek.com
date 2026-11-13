@@ -2,20 +2,22 @@
 
 !!! warning
 
-        Il faut etre **authentifié**. Accessible dans le menu **Calcul Synthèse journalière**
+        Vous devez être **authentifié**. Cette page est accessible depuis le menu **Calcul des synthèses journalières**.
 
-## Calculer la synthese si vous avez fait des imports manuelles
+## Calculer les synthèses après des imports manuels
 
-Cliquer sur les jours que vous souhaitez unitairement ou sur `Calculer toutes les synthèses`
+Cliquez sur chaque journée à traiter, ou sur `Calculer toutes les synthèses`.
 
-## Recalculer un essemble de synthese journalière
+## Recalculer plusieurs synthèses journalières
 
-Si vous avez modifié des éléments dans la configuration générale (T°C, Poids Pellet), ces nouveaux éléments sont pris en compte pour les synthèses futurs.
+Si vous modifiez des paramètres dans la configuration générale (température ou poids des granulés, par exemple), ces nouvelles valeurs seront prises en compte dans les prochaines synthèses.
 
-Note: Si vous voulez appliquer ces changements pour des jours precedent, vous devez recalculer la synthèse.
+!!! note
+
+    Pour appliquer ces changements aux journées précédentes, vous devez recalculer les synthèses correspondantes.
 
 ![w-0231-oko](/assets/img/oko/w-0231-oko.png)
 
-vous pouvez le faire en cliquant sur le calendrier et en precisant la plage de recalcul.
+Pour cela, cliquez sur le calendrier et indiquez la période à recalculer.
 
 ![w-0232-oko](/assets/img/oko/w-0232-oko.png)

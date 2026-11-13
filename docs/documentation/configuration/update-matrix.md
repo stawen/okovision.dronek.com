@@ -1,35 +1,35 @@
-# Gestion de la Matrice
+# Gestion de la matrice
 
 !!! warning
 
-    Il faut etre **authentifié**. Accessible dans le menu **MAtrice de lecteure CSV**
+    Vous devez être **authentifié**. Cette page est accessible depuis le menu **Matrice de lecture CSV**.
 
 !!! note
 
-    La suppression de la matrice ne supprime pas les données, mais vous ne pourrez plus en ajouter **tant que vous n'en avez pas récréé une**
+    La suppression de la matrice n’efface pas les données existantes. En revanche, vous ne pourrez plus en ajouter **tant que vous n’aurez pas recréé une matrice**.
 
-Si votre installation de chauffage change, par exemple pour :
+La structure du fichier CSV généré par votre chaudière peut changer si vous modifiez votre installation, par exemple en cas de :
 
-- Ajout d'un nouveau circuit de chauffage
-- Ajout de capteur solaire
-- Mise a jour du firmware
+- ajout d’un circuit de chauffage ;
+- ajout d’un capteur solaire ;
+- mise à jour du firmware.
 
-Le format du fichier CSV généré par votre chaudière va etre modifié.
+Dans ces situations, vous devez mettre à jour la matrice.
 
 !!! important
 
-    L'importation des données ne marchera plus si vous ne mettez pas la matrice à jour
+    L’importation des données ne fonctionnera plus tant que vous n’aurez pas mis à jour la matrice.
 
-![update](/assets/img/oko/w-0320-oko.png) Cliquer sur l'icone de mise à jour
+![update](/assets/img/oko/w-0320-oko.png) Cliquez sur l’icône de mise à jour.
 
-Re-importer un fichier CSV provenant de votre chaudière.
+Importez à nouveau un fichier CSV provenant de votre chaudière.
 
 ## Suppression de la matrice
 
-Si vous avez eu un probleme lors de l'import d'un fichier CSV et que la matrice est incohérente.
+Si un problème lors de l’importation d’un fichier CSV a rendu la matrice incohérente :
 
-![delete](/assets/img/oko/w-0330-oko.png)  Vous pouvez l'effacer en cliquant sur l'icone
+![delete](/assets/img/oko/w-0330-oko.png) Cliquez sur cette icône pour supprimer la matrice.
 
 !!! Attention
 
-    **Toutes les données journalières seront supprimées**. Par contre, l'historique est conservée.
+    **Toutes les données journalières seront supprimées.** L’historique, en revanche, sera conservé.

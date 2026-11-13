@@ -1,28 +1,30 @@
-# Création / Gestion des graphiques journaliers
+# Création et gestion des graphiques journaliers
 
 !!! warning
 
-    Il faut etre **authentifié**. Accessible dans le menu **Gestion rapports journaliers**
+    Vous devez être **authentifié**. Cette page est accessible depuis le menu **Gestion des rapports journaliers**.
 
-## Creation d'un graphique
+## Créer un graphique
 
 ![w-0240-oko](/assets/img/oko/w-0240-oko.png)
 
-**Choix du nom du graphique**
+**Choisissez le nom du graphique.**
 
 ![w-0250-oko](/assets/img/oko/w-0250-oko.png)
 
-Information: Vous pouvez créer autant de graphique que vous le voulez. Ils seront tous visibles sur la page d'accueil d'Okovision.
+!!! note
 
-## Ajout des capteurs au graphique
+    Vous pouvez créer autant de graphiques que vous le souhaitez. Ils seront tous visibles sur la page d’accueil d’Okovision.
 
-Selectionner le graphique avec la liste `FILTRE`
+## Ajouter des capteurs au graphique
+
+Sélectionnez le graphique dans la liste `FILTRE`.
 
 ![w-0260-oko](/assets/img/oko/w-0260-oko.png)
 
-Cliquer sur `Ajouter`, cette fenetre vous permet de choisir le capteur et de lui appliquer un coefficient correcteur (pour mettre sur la même echelle les données si besoin)
+Cliquez sur `Ajouter`. Dans la fenêtre qui s’ouvre, choisissez un capteur et appliquez-lui, si nécessaire, un coefficient correcteur afin d’harmoniser l’échelle des données.
 
-Recommencer la manipulation jusqu'à obtention du graphique désiré.
+Répétez l’opération jusqu’à obtenir le graphique souhaité.
 
 ![w-0270-oko](/assets/img/oko/w-0270-oko.png)
 
@@ -30,12 +32,12 @@ Recommencer la manipulation jusqu'à obtention du graphique désiré.
 
 ![w-0290-oko](/assets/img/oko/w-0290-oko.png)
 
-### Modifier la position
+### Modifier l’ordre des graphiques
 
 ![w-0310-oko](/assets/img/oko/w-0310-oko.gif)
 
-## Visualisation des données
+## Consulter les données
 
-Après avoir injecté les données dans okovision, vous pouvez les visualiser sur la première page
+Après avoir importé les données dans Okovision, vous pouvez les consulter sur la page d’accueil.
 
 ![w-0300-oko](/assets/img/oko/w-0300-oko.png)

@@ -1,62 +1,62 @@
-# Documentations
+# Documentation
 
-## Compatiblités
+## Compatibilité
 
 !!! important
 
-        Okovision est compatible uniquement avec le Firmware Oekofen et Paradigma V2 et V3.
+        Okovision est uniquement compatible avec les firmwares ÖkoFEN et Paradigma V2 et V3.
 
 !!! warning
 
-        [Okovision n'est plus developpé](index.md#pourquoi-pas-dokovision-v2-compatile-firmware-v4). Aucune compatibilité avec le Firmware V4 n'est possible 
+        [Okovision n’est plus développé](index.md#pourquoi-il-ny-aura-pas-dokovision-v2-compatible-avec-le-firmware-v4). Aucune compatibilité avec le firmware V4 n’est possible.
 
-## Le mot de l'auteur
+## Le mot de l’auteur
 
-### Qui suis je ?
+### Qui suis-je ?
 
-Je suis un heureux possesseur d'une Oekofen Pellomatic.
+Je suis l’heureux propriétaire d’une ÖkoFEN Pellematic.
 
-### Histoire Okovision
+### Histoire d’Okovision
 
-La chaudière en était capable, je l'ai immediatement relié à mon réseau domestique. J'ai ainsi pu commencer à explorer tout ce que je pouvais faire avec. Dans un premier temps, afin de mieux me permettre de régler tous les paramètres de la chaudière et de mesurer leurs impacts sur les courbes, la gestion de la puissance, etc, j'ai écris des macro excel pour traiter les CSV. 
+La chaudière le permettait, alors je l’ai immédiatement reliée à mon réseau domestique. J’ai ainsi pu explorer les possibilités qu’elle offrait. Dans un premier temps, pour m’aider à régler ses paramètres et à mesurer leur impact sur les courbes et la gestion de la puissance, j’ai écrit des macros Excel pour traiter les fichiers CSV.
 
-Très vite, il me fallait quelque chose d'automatisé et qui allait me demander quasi aucune intervention. 
+Très vite, j’ai eu besoin d’un outil automatisé qui ne nécessite presque aucune intervention.
 
-Je me suis donc lancé dans le developpement d'une application de type "Web" (backend : PHP, et frontend : Boostrap + Jquery)
+Je me suis donc lancé dans le développement d’une application web (back-end : PHP ; front-end : Bootstrap et jQuery).
 
-J'ai passé de nombreuses heures à developper `okovision` pour mes besoins personnels. Le systeme d'okovision était, avant les Version V4, assez simple. J'ai pu ainsi developper une interface graphique pour mettre en forme toutes les données produites par la chaudière via les exports CSV, mais aussi de pouvoir lui envoyer des commandes de configuration permettant ainsi d'historiser les configurations pour la régler aux petits oignons (je suis assez fière de cette fonctionnalité 😎)
-Après de nombreux echanges avec des utilisateurs via des forums, j'ai rajouté des fonctionnalités diverses pour repondre à leurs besoins (comme l'apprentissage de chaque configuration via une matrice de correspondance)
+J’ai consacré de nombreuses heures au développement d’`Okovision` pour répondre à mes besoins personnels. Avant le firmware V4, le fonctionnement d’Okovision était assez simple. J’ai ainsi pu créer une interface graphique qui met en forme les données de la chaudière exportées au format CSV. L’application permet également de lui envoyer des commandes de configuration et d’en conserver un historique, afin de faciliter les réglages (je suis assez fier de cette fonctionnalité 😎).
 
-### Le Bilan
+Après de nombreux échanges avec des utilisateurs sur des forums, j’ai ajouté plusieurs fonctionnalités pour répondre à leurs besoins, comme l’apprentissage de chaque configuration à l’aide d’une matrice de correspondance.
 
-`Okovision` a été un bon Use Case.
+### Bilan
 
-J'ai été au debut de ma vie professionnel developpeur, mais ce n'est plus mon metier principale.
+`Okovision` a été un bon cas d’usage.
 
-- Le PHP m'a permis de mettre en place facilement quelque chose
-    - meme avec tous les defauts que ce langage peut avoir.
-    - Mon code devait pouvoir etre hébergé sur des hébergeurs grand public (1and1, ovh, etc), PHP etait le language le plus repandu.
-- Le code n'est basé sur aucun framework. C'était un choix car je voulais que cela soit simple et légé a installé sans avoir de connaissance particulière
-    - Ceci dit, nous avons atteint les limites de l'exercice, car si je veux encore l'améliorer, il me faudra passer par un framework
-- Avec le recul, la structure du code n'est pas optimale. Ceci est vrai pour tout code que l'on produit, on peut toujours faire mieux 😉
-- il reste encores quelques petites fonctionnalités à mettre en place (comme la purge des données journalière pour allerger la base de donnée)
-- Maintenir un code qui doit toujours marcher n'est pas simple, car les versions php, mariadb, et autre evoluent, il faut toujours mettre à jour afin que les nouveaux utilisateurs puissent en profiter. Cela demande du temps, beaucoup de temps
+J’ai commencé ma carrière professionnelle comme développeur, mais ce n’est plus mon métier principal.
 
-## Pourquoi il n'y aura jamais d'okovision V2 compatile Firmware v4
+- PHP m’a permis de mettre rapidement en place une solution, malgré les défauts que peut avoir ce langage.
+    - Le code devait pouvoir être hébergé chez des hébergeurs grand public (1&1, OVH, etc.). PHP était alors le langage le plus répandu.
+- Le code ne repose sur aucun framework. C’était un choix délibéré : je voulais que l’installation soit simple et ne nécessite pas de connaissances particulières.
+    - Cela dit, nous avons atteint les limites de cette approche. Pour continuer à faire évoluer l’application, il faudrait utiliser un framework.
+- Avec le recul, la structure du code pourrait être améliorée. C’est le cas de tout projet : il est toujours possible de faire mieux 😉
+- Il reste quelques fonctionnalités à développer, comme la purge des données journalières pour alléger la base de données.
+- Maintenir une application fonctionnelle dans la durée n’est pas simple. PHP, MariaDB et les autres technologies évoluent ; il faut donc régulièrement mettre le projet à jour pour que les nouveaux utilisateurs puissent en profiter. Cela demande beaucoup de temps.
 
-Plusieurs raisons :
+## Pourquoi il n’y aura pas d’Okovision V2 compatible avec le firmware V4
 
-- Il n'est plus possible d'extraire le CSV directement depuis la chaudière. Les fichiers sont maintenant directement envoyés sur un stockage externe géré oekofen (ou un préstataire)
-- Il faut donc mettre en place une application web disponible sur internet afin que les utilisateurs puissent s'inscrire sans avoir à installer quoi que ce soit (Modele d'application de type SaaS)
-    - Suite a un POC, je pu constaté que j'etait en capacité de recolté l'ensemble des données de ==toutes== les chaudières okofen connectés sur internet sans avoir besoin de l'accord des propriétaire ni du constructeur. Cela pose une question de sécurité du coté d'okofen.
-- Pour comprendre comment les chaudières fonctionnent à partir de la Version 4, j'ai été obligé de faire du Reverse Ingeniering. Cela veut dire decompiler le Firmware pour lire le code. Ce que j'ai fait. J'ai pu ainsi comprend l'ensemble de l'architecture qu'okofen a mis en place pour recueillir les données de toutes les chaudières, et proposer leurs services aux travers de my.okofen.info
-    - En faisant cela, ==je me met dans l'illegalité==. Car je n'ai pas demandé l'accord d'oekofen de lire leur code source. Donc n'ayant aucun partenariat de developpement avec eux, je ne vais pas passer de du temps personnel pour developper une plateforme SaaS qui se base sur un acte illégale au regard du droit de la propriété
-    - De plus, comme je le disais, il faut que cela soit simple pour que tous les utilisateurs puissent utiliser `Okovision`. Et au regard des "connexions" qu'il faut faire avec le SI d'oekofen, cela n'est vraiment pas à la porter de tout le monde. D'où mon idée de départ : de le proposer au travers d'une Plateforme / Application SaaS
-- le modele économique n'est pas viable : En effet, je porterai les coûts d'infrastructure, car il faut mettre en place pas mal de chose pour que cela fonctionne et puisse grandir avec des utilisateurs qui viendrait s'inscrire (même avec un hebergement Cloud type Azure ou AWS). Donc la question est : Les utilisateurs seront-ils pret à payer pour ce service ? je ne crois pas, ou très peu d'entre eux / pas suffissement pour que cela soit viable
-    - Dois-je passer du temps a developper une toute nouvelle plateforme pour pouvoir inclure les Firmware V4 ? en sachant que le modele économique n'est pas viable et que tout repose sur ==un acte illegale au regard du droit de la propriété==
+Plusieurs raisons expliquent ce choix :
 
-Au vu de toutes ces raisons, je ne vais pas me lancer dans Okovision V2 bénévolement, car si Okofen décide de faire un developpement de leur coté equivalent à okovision, changer l'architecture logicielle, changer les mots de passe, plus rien de marchera. Donc que de temps perdu pour moi.
+- Il n’est plus possible d’extraire les fichiers CSV directement depuis la chaudière. Ils sont désormais envoyés vers un stockage externe géré par ÖkoFEN ou par un prestataire.
+- Il faudrait donc créer une application web accessible sur Internet, à laquelle les utilisateurs pourraient s’inscrire sans rien avoir à installer (un modèle d’application de type SaaS).
+    - Après une étude de faisabilité (POC), j’ai constaté qu’il était possible de récupérer les données de ==toutes== les chaudières ÖkoFEN connectées à Internet, sans l’accord de leurs propriétaires ni celui du constructeur. Cela soulève une question de sécurité pour ÖkoFEN.
+- Pour comprendre le fonctionnement des chaudières à partir du firmware V4, j’ai dû procéder à de la rétro-ingénierie, c’est-à-dire décompiler le firmware pour en lire le code. J’ai ainsi pu comprendre l’architecture mise en place par ÖkoFEN pour recueillir les données des chaudières et proposer ses services via my.okofen.info.
+    - En procédant ainsi, ==je me placerais dans l’illégalité==, car je n’ai pas demandé à ÖkoFEN l’autorisation d’examiner son code source. En l’absence de partenariat de développement avec le constructeur, je ne souhaite pas consacrer de temps personnel à la création d’une plateforme SaaS reposant sur une démarche qui pourrait contrevenir au droit de la propriété intellectuelle.
+    - De plus, comme indiqué précédemment, `Okovision` doit rester simple d’utilisation. Or, les « connexions » nécessaires avec le système d’information d’ÖkoFEN ne sont pas accessibles à tous. C’est pourquoi j’envisageais de proposer le service sous la forme d’une plateforme ou d’une application SaaS.
+- Le modèle économique ne serait pas viable. Je devrais assumer les coûts d’infrastructure nécessaires au fonctionnement et à l’évolution du service, y compris avec un hébergement cloud comme Azure ou AWS. Les utilisateurs seraient-ils prêts à payer pour ce service ? Je ne le pense pas, ou pas en nombre suffisant.
+    - Cela vaut-il la peine de développer une toute nouvelle plateforme compatible avec le firmware V4, alors que le modèle économique n’est pas viable et que le projet repose sur ==une démarche potentiellement contraire au droit de la propriété intellectuelle== ?
 
-Pour toutes ces raisons, le developpement d'okovision est arreté dans la version actuelle, car il repond à mon besoin de suivre la consommation de granulée de ==ma== chaudière
+Pour toutes ces raisons, je ne souhaite pas développer bénévolement Okovision V2. Si ÖkoFEN créait une solution équivalente, modifiait son architecture logicielle ou changeait les mots de passe, Okovision cesserait de fonctionner. Ce serait alors beaucoup de temps investi en vain.
 
-Merci à tous ceux qui ont participé de prèt et de loin.
+Le développement d’Okovision s’arrête donc à la version actuelle, qui répond à mon besoin de suivre la consommation de granulés de ==ma== chaudière.
+
+Merci à toutes celles et ceux qui ont contribué au projet, de près ou de loin.
